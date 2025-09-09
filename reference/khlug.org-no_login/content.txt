@@ -1,0 +1,191 @@
+
+
+
+		
+		
+			
+	
+		
+				쿠러그, 경희대학교 중앙 IT 동아리
+	
+
+	메뉴
+	메뉴 닫기×
+	
+		
+							
+					소개
+					
+						쿠러그
+						활동소개
+						타임라인
+						Hello 블로그
+						페이스북
+						이메일
+					
+				
+				가입 신청
+				Hello 블로그
+				LAB
+				
+				로그인
+					
+	
+		
+		
+			
+			
+			
+				
+			
+			
+				
+			
+			
+				로그인
+			
+			
+				
+				✓ 로그인 유지
+			
+			
+							
+				$(function(){
+					setTimeout(function(){if($('#id_text').val()) showLogin();},1000);
+				});
+				
+						
+			
+				비밀번호 재설정
+				회원 등록
+			
+			
+		
+	
+		
+	
+	
+	
+						
+		코딩으로 꿈을 펼치는 세상
+		프로그래밍으로 만들어질 미래
+		
+			동아리 소개
+			가입 신청
+		
+	
+	
+	
+		
+		
+			
+				
+				(function(d, s, id) {
+				  var js, fjs = d.getElementsByTagName(s)[0];
+				  if (d.getElementById(id)) return;
+				  js = d.createElement(s); js.id = id;
+				  js.src = "//connect.facebook.net/ko_KR/sdk.js#xfbml=1&version=v2.5";
+				  fjs.parentNode.insertBefore(js, fjs);
+				}(document, 'script', 'facebook-jssdk'));
+				
+				
+				
+			
+		
+					
+		
+			
+								
+					
+						
+							[보도자료] ‘농업의 기술화’ 주제로AI·SW 해커톤 열려
+							May 10, 2025
+						
+						
+					
+				
+								
+					
+						
+							[보도자료] ‘환경과 소프트웨어’ 주제로 경희대학교 SW 해커톤 열려
+							May 10, 2024
+						
+						
+					
+				
+								
+					
+						
+							KHUTHON 2024
+							May 10, 2024
+						
+						
+					
+				
+								
+					
+						
+							[2023-2 세미나: 나중에 말하기] Flutter를 이용한 앱개발
+							Mar 20, 2024
+						
+						
+					
+				
+								
+					
+						
+							[2023-2 세미나: 나중에 말하기] 4일만에 배우는 3D CAD
+							Mar 20, 2024
+						
+						
+					
+				
+								
+					
+						
+							[2023-2 세미나: 나중에 말하기] 정보보안 함께 공부하기
+							Mar 20, 2024
+						
+						
+					
+				
+								
+					
+						
+							[2023-2 세미나: 나중에 말하기] 파이썬 개발 기초
+							Mar 20, 2024
+						
+						
+					
+				
+								
+					
+						
+							[2023-2 세미나: 나중에 말하기] 나 java 봐라
+							Mar 20, 2024
+						
+						
+					
+				
+							
+		
+		
+	
+	
+		
+	
+	
+		
+		17104 경기도 용인시 기흥구 덕영대로 1732, 경희대학교 국제캠퍼스 학생회관 405호
+	
+	
+		 경희대학교
+		 쿠러그
+	
+	
+	
+	
+	
+
+
+

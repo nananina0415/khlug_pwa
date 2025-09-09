@@ -1,0 +1,37 @@
+.real_content{font-size:14px;line-height:1.5}
+.real_content h1{color:#00a0e9;font-size:30px;padding:10px 0}
+.real_content h2{color:#013e8d;font-size:25px;padding:10px 0}
+.real_content h3{color:#0073b9;font-size:20px;padding:10px 0}
+.real_content h4{color:#00a0e9;font-size:17px;padding:10px 0}
+.real_content h5{color:#00a0e9;font-size:15px;padding:10px 0}
+.real_content h6{color:#999;font-size:15px;padding:10px 0}
+.real_content table{border-top:1px solid #999;margin:5px 0}
+.real_content table td{border-bottom:1px solid #bbb;padding:5px}
+.real_content table th{border-bottom:1px solid #bbb;text-align:center;background:#ddd;padding:5px}
+.real_content ul{margin-left:25px;list-style:disc}
+.real_content ol{margin-left:25px;list-style:decimal}
+.real_content li{margin:5px 0}
+.real_content .hljs{overflow-x:auto}
+.real_content p{margin:10px 0}
+.real_content blockquote{border:1px solid #ddd;padding:10px 10px 10px 30px;background:url('/images/blockquote.png') #b5dff2 no-repeat 5px 5px;background-size:20px 20px;width:70%;margin:10px auto;overflow-x:auto;-webkit-overflow-scrolling:touch}
+.real_content img{max-width:100%;height:auto}
+
+.real_content .accordion-content{padding:5px;background:#eee}
+.real_content .accordion-content .accordion-button{padding:5px 5px 10px 5px;color:#00a0e9;font-size:16px;cursor:pointer}
+.real_content .accordion-content .accordion-button i{float:right;padding:5px 0;display:none}
+.real_content .accordion-content .accordion-button i.active{display:block}
+.real_content .accordion-content .accordion-item{background:#fff;padding:5px;display:none}
+
+.real_content section.footnotes{border-top:1px solid #ddd;margin-top:10px;padding-top:10px}
+.real_content .blink{background-color:yellow;transition:background-color,color 0.5s ease-in-out}
+.real_content .blinkend{background-color:transparent}
+.real_content a[rel=footnote].blink{background-color:#00a0e9}
+.real_content a[rel=footnote].blinkend{background-color:transparent}
+
+.real_content .ext_record{border:1px solid #ddd;background:#eee}
+.real_content .ext_record .ext_meta{color:#999;padding:10px;line-height:1.5;font-size:13px}
+.real_content .ext_record .ext_meta span.extmeta{float:right}
+.real_content .ext_record .ext_meta a{color:#999}
+.real_content .ext_record .ext_content{background:#fff;padding:10px}
+.real_content .ext_record .ext_content.archive,
+.real_content .ext_record .ext_content.disallow{background:transparent;text-align:center;color:#999;padding:0 10px 25px 10px}

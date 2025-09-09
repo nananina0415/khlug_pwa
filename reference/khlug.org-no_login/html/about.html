@@ -1,0 +1,305 @@
+<html lang="ko">
+	<head>
+				<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,minimum-scale=1.0,maximum-scale=1.0">
+	
+	<meta name="robots" content="index,follow,noimageindex">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<link href="../styles/SpoqaHanSans-kr.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="../styles/common.css">
+	<link rel="stylesheet" href="../styles/xeicon.css">
+	
+	<link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico">
+	<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+	
+	<meta name="apple-mobile-web-app-capable" content="no">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="apple-mobile-web-app-title" content="쿠러그">
+	
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="쿠러그">
+	<meta property="og:description" content="경희대학교 중앙 IT 동아리, 세상의 모든 ICT 기술을 다룹니다.">
+	<meta property="og:image" content="https://khlug.org/images/og.jpg">
+	<meta property="og:url" content="https://KHLUG.org">
+
+	<script src="../scripts/jquery-2.1.4.min.js"></script>
+	
+	<title>쿠러그 소개</title>
+	
+	<link type="text/css" rel="stylesheet" href="../styles/layout.css">
+	<script type="text/javascript" src="../scripts/layout.js"></script>
+	<link type="text/css" rel="stylesheet" href="../styles/content.css">
+	<link rel="stylesheet" href="../styles/mono-blue.css">
+	<script type="text/javascript" src="../scripts/highlight.pack.js"></script>
+	<script>
+	$(function(){
+		hljs.initHighlightingOnLoad();
+		setInterval(function(){hljs.initHighlightingOnLoad();},1000);
+	});
+	</script>
+	
+	<link rel="stylesheet" href="../styles/about.css">
+	</head>
+<body>
+
+<div id="MANAPIE">
+		
+			
+	<div id="header">
+		<h1 class="logo">
+				<a href="../html/khlug.org.html"><span class="blind">쿠러그, 경희대학교 중앙 IT 동아리</span><span></span></a>
+	</h1>
+
+	<a class="navigation_button" href="#" onclick="return false"><span class="blind">메뉴</span><span><i></i><i></i><i></i><b></b></span></a>
+	<a class="navigation_button_close" href="#" onclick="return false"><span class="blind">메뉴 닫기</span><span>×</span></a>
+	<div class="navigation blackbg">
+		<ul>
+							<li class="active">
+					<a href="../html/about.html"><span>소개</span></a>
+					<ul>
+						<li class="active"><a href="../html/about.html">쿠러그</a></li>
+						<li><a href="../html/activity.html">활동소개</a></li>
+						<li><a href="../html/timeline.html">타임라인</a></li>
+						<li><a href="../html/hello.khlug.org.html" target="_blank">Hello 블로그</a></li>
+						<li><a href="../html/khlug.html" target="_blank">페이스북</a></li>
+						<li><a href="../html/mailto:we_are@khlug.org.html">이메일</a></li>
+					</ul>
+				</li>
+				<li><a href="../html/join.html"><span>가입 신청</span></a></li>
+				<li><a href="../html/hello.khlug.org.html" target="_blank"><span>Hello 블로그</span></a></li>
+				<li><a href="../html/lab.html"><span>LAB</span></a></li>
+				
+				<li class="login"><a href="#" onclick="showLogin();return false">로그인</a></li>
+					</ul>
+	</div>
+		<div class="login_window">
+		<form method="POST" action="https://khlug.org/login">
+			<input type="hidden" name="_token" value="91HUbpg7vLMEHdktOp9qa8IucPm1e3fFaiSeY25G">
+			
+			<div class="input_wrap">
+				<input type="text" name="name" id="id_text" value="" placeholder="아이디">
+			</div>
+			<div class="input_wrap">
+				<input type="password" name="password" value="" placeholder="비밀번호">
+			</div>
+			<div class="submit">
+				<button type="submit">로그인</button>
+			</div>
+			<a href="#" class="remember" onclick="$(this).toggleClass('active');$('input[name=remember]').prop('checked', !$('input[name=remember]').prop('checked'));return false">
+				<span class="blind"><input type="checkbox" name="remember"></span>
+				<i>✓</i> 로그인 유지
+			</a>
+			
+							<script>
+				$(function(){
+					setTimeout(function(){if($('#id_text').val()) showLogin();},1000);
+				});
+				</script>
+						
+			<div class="menus">
+				<a href="../html/reset.html">비밀번호 재설정</a>
+				<a href="../html/register.html">회원 등록</a>
+			</div>
+			
+		</form>
+	</div>
+		<div class="clear"></div>
+	</div>
+	
+	<div id="body">
+					<div id="section_slogan">
+	<div class="slogan">
+		코딩으로 꿈을 펼치는 세상<br>
+		프로그래밍으로 만들어질 미래<br>
+		<img class="signature" src="../images/logo_squere_dark_ko.png" alt="쿠러그">
+	</div>
+</div>
+<div id="section_about">
+	<div class="paragraphs">
+		<p>
+			쿠러그(KHLUG)는 세상의 모든 IT 기술 및 이와 관련된 분야에 대한 연구 및 개발 활동을 주 목적으로 하는 <img src="../images/khu.png" alt=""> <span>경희대학교 중앙 IT 동아리</span>입니다.
+		</p>
+		<p>
+			인류의 미래는 프로그래밍으로 만들어질 것이고, 사람들은 코딩으로 꿈을 펼치게 될 것입니다.<br>
+			쿠러그는 진보하는 세상에서 중심이 되는 인재를 찾기 위해 코딩 교육, 프로그래밍 스터디, 연구 프로젝트, 산출물 발표 세미나와 같은 활동을 하고 있습니다.
+		</p>
+		<p>
+			우리는 전공에 얽매이지 않습니다.<br>
+			프로그래밍에 대해 하나도 모르시는 분들을 위해 프로그래밍 언어를 포함한 코딩 기초 교육과 전공 수준의 몇 가지 응용 교육이 준비되어 있습니다. 아이디어가 있는 분은 다른 회원들과 함께 서비스를 개발해보실 수 있습니다. 프로그래밍 전문가라면 남들과 기술을 공유하거나 쿠러그의 연구 지원 시스템을 활용하여 연구를 시작해보실 수도 있습니다.
+		</p>
+		
+		<div class="line"></div>
+		<p>
+			쿠러그의 모든 회원은 크게 14개로 나누어진 관심 분야를 하나 이상 가지고 있습니다.
+		</p>
+		<ul>
+			<li>
+				<strong>웹/어플리케이션 서비스</strong>
+				<span>사용자와 상호작용을 하는 소프트웨어 프로그램을 만듭니다.</span>
+			</li>
+			<li>
+				<strong>사물인터넷/로봇</strong>
+				<span>하드웨어와 소프트웨어가 결합되어 동작하는 기계를 만듭니다.</span>
+			</li>
+			<li>
+				<strong>게임/가상현실</strong>
+				<span>사용자가 가상의 공간에서 꿈을 펼칠 수 있도록 합니다.</span>
+			</li>
+			<li>
+				<strong>보안/해킹</strong>
+				<span>데이터가 유출되거나 변조되지 않도록 내외부의 공격으로부터 방어합니다.</span>
+			</li>
+			<li>
+				<strong>인공지능/머신러닝</strong>
+				<span>소프트웨어가 스스로 사물과 자신을 인지하고 사고할 수 있도록 합니다.</span>
+			</li>
+			<li>
+				<strong>영상처리/시각화</strong>
+				<span>자료나 정보를 시각화하거나 시각적인 데이터, 컴퓨터 그래픽을 다룹니다.</span>
+			</li>
+			<li>
+				<strong>데이터베이스/클라우드</strong>
+				<span>자료를 효율적으로 저장하고 접근과 분석이 쉽도록 합니다.</span>
+			</li>
+			<li>
+				<strong>네트워크/통신</strong>
+				<span>데이터가 효과적이고 빠르게 전송되도록 합니다.</span>
+			</li>
+			<li>
+				<strong>운영체제/미들웨어</strong>
+				<span>어플리케이션 하단에서 작동하는 하위 시스템을 개발합니다.</span>
+			</li>
+			<li>
+				<strong>어셈블리/전처리</strong>
+				<span>코드가 하드웨어 위에서 작동하기 위해 처리되는 과정을 다룹니다.</span>
+			</li>
+			<li>
+				<strong>하드웨어/전자회로</strong>
+				<span>소프트웨어가 임베디드되기 위한 하드웨어를 설계하고 제작합니다.</span>
+			</li>
+			<li>
+				<strong>알고리즘/전산수학</strong>
+				<span>효율적인 프로그램 로직을 만들기 위해 연구합니다.</span>
+			</li>
+			<li>
+				<strong>UX/UI 디자인</strong>
+				<span>기술과 사용자가 직접적으로 맞닿는 부분을 설계합니다.</span>
+			</li>
+			<li>
+				<strong>데이터 사이언스/통계학</strong>
+				<span>데이터를 수집 및 분석하여 유효한 패턴을 파악하고 인사이트를 추출합니다.</span>
+			</li>
+		</ul>
+		<p>
+			당신은 어떤 분야에 관심이 있나요?<br>
+			쿠러그에서 당신과 같은 관심을 가진 회원들과 함께 해보세요. 문은 누구에게나 열려있습니다.
+		</p>
+		
+		<a class="btn" href="../html/join.html">가입신청 하러가기</a>
+	</div>
+</div>
+
+<div id="section_partnership">
+	<p>
+		쿠러그는 경희대학교의 여러 단체들과 기술·자원 교류를 하고 있습니다.
+	</p>
+	<ul>
+		<li><img src="../images/khu.png" alt="" class="khu"> 중앙동아리연합회 <span>국제캠퍼스 중앙동아리 연합</span>
+		</li><li><img src="../images/952659d4c98941c5.png" alt=""> 뇌트워크 <span>중앙 뇌과학 동아리</span>
+		</li><li><img src="../images/tgwing.png" alt=""> T.G.WinG <span>소프트웨어융합대학 학술 동아리</span>
+		</li><li><img src="../images/net-logo.png" alt=""> N.E.T <span>소프트웨어융합대학 학술 동아리</span>
+		</li><li class="others">지금 이 순간에도 보다 많은 사람들과 지식을 나누기 위해 노력 중입니다. 언제든지 연락 주세요!</li>
+	</ul>
+	
+	<div class="line"></div>
+		<p>
+		또한 학교 밖의 여러 단체들과도 교류를 하고 있습니다.
+	</p>
+	<ul>
+		<li><img src="../images/909659d4c76148a6.png" alt=""> SUSC <span>대학 IT 동아리 교류 단체</span>
+		</li><li><img src="../images/hexa-logo.png" alt=""> HeXA <span>UNIST 정보보안 및 개발 동아리</span>
+		</li><li><img src="../images/rce-logo.jpeg" alt=""> RCE <span>경북소프트웨어고등학교 해킹동아리</span>
+		</li><li class="others">이외에도 여러 단체와 교류하며 우리의 경험을 넓히고자 노력 중입니다. 여러분의 연락을 기다립니다!</li>
+	</ul>
+	
+	<div class="line"></div>
+	<p>
+		그리고 아래 기관과 함께 매년 경희대학교 소프트웨어 해커톤 <a href="../html/thon.khlug.org.html" target="_blank"><img src="../images/favicon.png" style="width:20px;margin-top:2px" alt="">khu<b>thon</b></a>을 개최하고 있습니다.
+	</p>
+	<ul>
+		<li><img src="../images/khu.png" alt="" class="khu"> 경희대학교 소프트웨어융합대학 <span>컴퓨터공학부 및 소프트웨어융합학과</span>
+		</li><li><img src="../images/khu.png" alt="" class="khu"> 경희대학교 AI·SW 교육단 <span>SW중심대학사업과 연계한 총장 직속의 거교적 사업 기관</span>
+		</li><li><img src="../images/khu.png" alt="" class="khu"> 경희대학교 SW중심대학사업단 <span>과학기술정보통신부 및 정보통신기술진흥센터(IITP)의 SW중심대학지원사업</span>
+		</li><li><img src="../images/coss-logo.png" alt=""> 경희대학교 실감미디어 혁신융합대학 사업단 <span>첨단분야 혁신융합대학 컨소시엄 사업단</span>
+		</li><li><img src="../images/ajou-univ.png" alt=""> 아주대학교 SW융합교육원 <span>아주대학교 SW중심대학사업단 연계 교육원</span>
+		</li><li class="others">해커톤은 계속해서 확장되고 있습니다!</li>
+	</ul>
+	
+	<div class="line"></div>
+	<p>
+		뿐만 아니라 아래 동아리와 함께 경희대학교 IT 동아리 연합 세미나 「KHUITCON」을 개최하고 있습니다.
+	</p>
+	<ul>
+		<li><img src="../images/gdgoc-logo.png" alt="" class="khu"> GDG on Campus KHU <span>경희대학교의 Google Devleopment Student Club</span>
+		</li><li><img src="../images/acc-log.png" alt="" class="khu"> AWS Cloud Clubs KHU <span>AWS 공식 대학생 커뮤니티 경희대학교 지부</span>
+		</li><li><img src="../images/9oormthon-univ-logo.png" alt="" class="khu"> 9oormthonUNIV <span>카카오 및 구름과 함께하는 전국 대학 IT 연합 동아리</span>
+		</li><li><img src="../images/khuda-logo.png" alt=""> KHUDA <span>경희대학교 데이터분석 및 AI 동아리</span>
+		</li><li class="others">쿠러그는 함께 성장할 수 있는 기회를 언제나 환영합니다!</li>
+	</ul>
+
+	<div class="line"></div>
+	<p>
+		쿠러그에 대한 아끼지 않는 지원을 통해 우리에게 힘을 주시는 분들도 계십니다.
+	</p>
+	<ul>
+		<li><img src="../images/khu.png" alt="" class="khu"> 경희대학교 중앙동아리연합회 <span>경희대학교 국제캠퍼스 중앙동아리 연합</span>
+		</li><li><img src="../images/khu.png" alt="" class="khu"> 경희대학교 학생지원센터 <span>미래혁신단 소속 교내지원부서</span>
+		</li><li><img src="../images/khu.png" alt="" class="khu"> 경희대학교 SW중심대학사업단 <span>과학기술정보통신부 및 정보통신기술진흥센터(IITP)의 SW중심대학지원사업</span>
+		<!-- <li><img src="/images/d2.png" alt="" /> NAVER D2 <span>네이버 개발자 상생 프로그램 (CAMPUS PARTNER)</span> -->
+		</li><li class="others">그리고 동아리를 항상 생각해주시는 우리 회원들과 졸업하신 선배님들...</li>
+	</ul>
+</div>
+
+<div id="section_contact">
+	<div class="map">네오르네상스문(정문)</div>
+	<p class="office">
+		쿠러그는 전공과 관계 없이 누구나 활동할 수 있습니다만, 각종 시설은 국제캠퍼스 학생회관에 마련되어 있습니다.<br>
+		동아리방은 국제캠퍼스 학생회관 405호, 406호, 410호이며, 서버실(409호) 또한 있습니다.
+	</p>		
+	<p class="office">
+		경기도 용인시에 위치한 국제캠퍼스는 수도권 전철 <span class="bundang">수인분당선</span> 영통역에서 도보로 15분 거리에 위치해 있습니다.<br>
+		자가용 및 대중교통 등의 구체적인 경로는 학교 홈페이지에 자세히 나와 있습니다.<br>
+		<a href="../html/view.do.html" target="_blank">&gt; 경희대학교 국제캠퍼스 오시는 길 (학교 홈페이지)</a>
+	</p>
+	<p class="office">
+		교내에 진입하는 <span class="mbus">광역</span> M5107, <span class="red">좌석</span> 5100, <span class="red">좌석</span> 1112, <span class="red">좌석</span> 1560, <span class="red">좌석</span> 7000, <span class="gbus">일반</span> 9 번 버스(캠퍼스 내에서 승하차 시 무료)를 타고 '사색의광장' 정류장에서 하차하시면 정면에 보이는 중앙도서관 오른쪽에 학생회관 건물이 있습니다.
+	</p>
+	<p class="blue">
+		쿠러그는 기본적으로 모든 업무를 전산으로 처리하고 기록하는 것을 원칙으로 하고 있습니다.<br>
+		동아리방에 찾아오셔도 원하시는 안내를 받지 못하실 수도 있으며, 특히 가입 신청은 온라인으로만 받고 있습니다.
+	</p>
+	
+	<div class="line"></div>
+	<p>
+		쿠러그의 활동 모습은 <a href="../html/hello.khlug.org.html" target="_blank">Hello 블로그</a>와 <a href="../html/khu_khlug.html" target="_blank">인스타그램</a>, <a href="../html/khlug.html" target="_blank">페이스북 페이지</a>에서 보실 수 있습니다.<br>
+		궁금하신 점이 있으면 <a href="../html/mailto:we_are@khlug.org.html">we_are@khlug.org</a>로 이메일 보내주시기 바랍니다.
+	</p>
+</div>
+	</div>
+	
+	<div id="footer">
+		<address class="address">
+		17104 경기도 용인시 기흥구 덕영대로 1732, <span>경희대학교 국제캠퍼스 학생회관 405호</span>
+	</address>
+	<address class="sponsor">
+		<a href="../html/khu.ac.kr.html" target="_blank"><img src="../images/khu.png" alt=""> 경희대학교</a>
+		<a href="https://khlug.org/"><img src="../images/favicon.gif" alt=""> 쿠러그</a>
+	</address>
+	<div class="clear"></div>
+	</div>
+	
+	<div id="loader"><div class="lds-dual-ring"><div></div><div></div></div></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,299 @@
+<html lang="ko">
+	<head>
+				<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,minimum-scale=1.0,maximum-scale=1.0">
+	
+	<meta name="robots" content="index,follow,noimageindex">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<link href="../styles/SpoqaHanSans-kr.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="../styles/common.css">
+	<link rel="stylesheet" href="../styles/xeicon.css">
+	
+	<link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico">
+	<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+	
+	<meta name="apple-mobile-web-app-capable" content="no">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="apple-mobile-web-app-title" content="쿠러그">
+	
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="쿠러그">
+	<meta property="og:description" content="경희대학교 중앙 IT 동아리, 세상의 모든 ICT 기술을 다룹니다.">
+	<meta property="og:image" content="https://khlug.org/images/og.jpg">
+	<meta property="og:url" content="https://KHLUG.org">
+
+	<script src="../scripts/jquery-2.1.4.min.js"></script>
+	
+	<title>쿠러그 > 회원 등록</title>
+	
+	<link type="text/css" rel="stylesheet" href="../styles/layout.css">
+	<script type="text/javascript" src="../scripts/layout.js"></script>
+	<link type="text/css" rel="stylesheet" href="../styles/content.css">
+	<link rel="stylesheet" href="../styles/mono-blue.css">
+	<script type="text/javascript" src="../scripts/highlight.pack.js"></script>
+	<script>
+	$(function(){
+		hljs.initHighlightingOnLoad();
+		setInterval(function(){hljs.initHighlightingOnLoad();},1000);
+	});
+	</script>
+	
+	<link rel="stylesheet" href="../styles/member.css">
+	</head>
+<body>
+
+<div id="MANAPIE">
+		
+			
+	<div id="header">
+		<h1 class="logo">
+				<a href="../html/khlug.org.html"><span class="blind">쿠러그, 경희대학교 중앙 IT 동아리</span><span></span></a>
+	</h1>
+
+	<a class="navigation_button" href="#" onclick="return false"><span class="blind">메뉴</span><span><i></i><i></i><i></i><b></b></span></a>
+	<a class="navigation_button_close" href="#" onclick="return false"><span class="blind">메뉴 닫기</span><span>×</span></a>
+	<div class="navigation">
+		<ul>
+							<li>
+					<a href="../html/about.html"><span>소개</span></a>
+					<ul>
+						<li><a href="../html/about.html">쿠러그</a></li>
+						<li><a href="../html/activity.html">활동소개</a></li>
+						<li><a href="../html/timeline.html">타임라인</a></li>
+						<li><a href="../html/hello.khlug.org.html" target="_blank">Hello 블로그</a></li>
+						<li><a href="../html/khlug.html" target="_blank">페이스북</a></li>
+						<li><a href="../html/mailto:we_are@khlug.org.html">이메일</a></li>
+					</ul>
+				</li>
+				<li><a href="../html/join.html"><span>가입 신청</span></a></li>
+				<li><a href="../html/hello.khlug.org.html" target="_blank"><span>Hello 블로그</span></a></li>
+				<li><a href="../html/lab.html"><span>LAB</span></a></li>
+				
+				<li class="login"><a href="#" onclick="showLogin();return false">로그인</a></li>
+					</ul>
+	</div>
+		<div class="login_window">
+		<form method="POST" action="https://khlug.org/login">
+			<input type="hidden" name="_token" value="91HUbpg7vLMEHdktOp9qa8IucPm1e3fFaiSeY25G">
+			
+			<div class="input_wrap">
+				<input type="text" name="name" id="id_text" value="" placeholder="아이디">
+			</div>
+			<div class="input_wrap">
+				<input type="password" name="password" value="" placeholder="비밀번호">
+			</div>
+			<div class="submit">
+				<button type="submit">로그인</button>
+			</div>
+			<a href="#" class="remember" onclick="$(this).toggleClass('active');$('input[name=remember]').prop('checked', !$('input[name=remember]').prop('checked'));return false">
+				<span class="blind"><input type="checkbox" name="remember"></span>
+				<i>✓</i> 로그인 유지
+			</a>
+			
+							<script>
+				$(function(){
+					setTimeout(function(){if($('#id_text').val()) showLogin();},1000);
+				});
+				</script>
+						
+			<div class="menus">
+				<a href="../html/reset.html">비밀번호 재설정</a>
+				<a href="../html/register.html">회원 등록</a>
+			</div>
+			
+		</form>
+	</div>
+		<div class="clear"></div>
+	</div>
+	
+	<div id="body">
+			<div id="location">
+		<i></i> 회원 등록
+	</div>
+		
+<div class="member">
+	<div id="member_write">
+		<form class="form-horizontal" role="form" method="POST" action="https://khlug.org/register">
+			<input type="hidden" name="_token" value="91HUbpg7vLMEHdktOp9qa8IucPm1e3fFaiSeY25G">
+			
+			<div class="select_wrap" id="type" style="text-align:right;margin:15px 0 -15px 0">
+				<a href="#" class="type_khlug active" onclick="$('#belong').slideUp();$(this).parent().find('a').removeClass('active');$(this).addClass('active');$(this).parent().find('input').val('khlug');return false"><span class="check"><i class="xi-check"></i></span> 쿠러그 회원</a>
+				<a href="#" class="type_united" onclick="$('#belong').slideDown(); getNext('none',$('#belong .option.default a')); $(this).parent().find('a').removeClass('active');$(this).addClass('active');$(this).parent().find('input').val('united');return false" style="margin-right:0"><span class="check"><i class="xi-check"></i></span> 교류 회원</a>
+				<input type="hidden" name="type" value="khlug">
+			</div>
+			
+			<div id="belong" style="display:none">
+				<label>소속</label>
+				<div class="college_wrap default">
+					<input type="hidden" name="belong" value="">
+					<div class="value" onclick="$(this).parent().find('.options').slideDown()">
+						<div class="cell"><div>&#160;</div></div>
+						<div class="cell"><div>&#160;</div></div>
+						<div class="clear"></div>
+					</div>
+					<div class="options"><div class="option_wrap">
+						<div class="option default"><a href="#"></a></div>
+						<div class="clear"></div>
+					</div></div>
+				</div>
+			</div>
+			
+			<label>로그인 ID</label>
+			<div class="input_wrap"><input type="text" id="namename" name="name" value="" onkeyup="checkid()" required></div>
+                        <script>
+	        $(function(){
+		        if($('input[name=type]').val()=='united')
+					$('#type .type_united').click();
+		        if($('input[name=belong]').val())
+					$(this).find('.value .cell:eq(0) div').text($('input[name=belong]').val());
+	        });
+	        		
+			// 이거 코드 왜이렇게 거지 같지 1
+			function getNext(keyword,cell){
+				$(cell).parent().nextAll().not('.clear').remove();
+				$(cell).parent().find('a').removeClass('active');
+				$(cell).addClass('active');
+				if(keyword){
+					$.get('/united/'+encodeURIComponent(keyword),{}).done(function(data){
+						//IE8 이하에선 유니코드가 포함된 URI를 인코딩 안 해주면 로드를 못 함
+						if(data) $(cell).parent().after('<div class="option">'+data+'</div>');
+						else $(cell).parents('.options').slideUp();
+						setValue(cell);
+					}).fail(function(){
+						alert('전송에 실패했습니다.');
+					});
+				}else{
+					setValue(cell);
+				}
+			}
+			
+			// 이거 코드 왜이렇게 거지 같지 2
+			function setValue(cell){
+				var college=new Array;
+				$('.college_wrap').each(function(){
+					$(this).find('.value .cell:eq(0) div').text($(this).find('.option:eq(1) a.active').text());
+					$(this).find('.value .cell:eq(1) div').text($(this).find('.option:eq(2) a.active').text());
+					if($(this).find('.option:eq(1) a.active').text()=='(없음)'){
+						$(this).find('.value .cell:eq(0) div').text('')
+						$(this).find('.options').slideUp();
+					}
+					if($(this).find('.value .cell:eq(0) div').text()){
+						var temp=$(this).find('.value .cell:eq(0) div').text();
+						if($(this).find('.value .cell:eq(1) div').text()) temp+=' '+$(this).find('.value .cell:eq(1) div').text();
+						college.push(temp);
+					}
+				});
+				var text=college[0];
+				if(college[1]) text+=','+college[1];
+				if(college[2]) text+=','+college[2];
+				$(cell).parent().parent().parent().parent().find('input[name]').val(text);
+			}
+	
+            function checkid(){
+				$.post('/checkid',{name:$('#namename').val()}).done(function(data){
+					$('input[name=name]').parent().next('.error').remove();
+					$('input[name=name]').parent().after(data);
+				});
+            }
+            
+            function checkpw(){
+				$('input[name=password]').parent().next('.error').remove();
+            	if($('#pwpw').val().length < 8){
+					$('input[name=password]').parent().after('<div class="error">비밀번호는 8자리 이상이어야 합니다.</div>');
+            	}
+            }
+            
+            function checkpwconfirm(){
+				$('input[name=password_confirmation]').parent().next('.error').remove();
+            	if($('#pwpw').val()!=$('#pwpwpw').val()){
+					$('input[name=password_confirmation]').parent().after('<div class="error">먼저 입력하신 비밀번호와 다릅니다.</div>');
+            	}
+            }
+            
+            function checkform(){
+	            if(!$('input#namename').val()){ alert('로그인 ID를 입력해주세요.'); $('input#namename').focus(); }
+	            else if(!$('input#pwpw').val()){ alert('로그인 비밀번호를 입력해주세요.'); $('input#pwpw').focus(); }
+	            else if(!$('input#pwpwpw').val()){ alert('로그인 비밀번호 확인를 입력해주세요.'); $('input#pwpwpw').focus(); }
+	            else if(!$('input#email').val()){ alert('이메일를 입력해주세요.'); $('input#email').focus(); }
+	            else if(!$('input#number').val()){ alert('학번을 입력해주세요.'); $('input#realname').focus(); }
+	            else if(!$('input#password').val()){ alert('종합정보시스템 비밀번호를 입력해주세요.'); $('input#password').focus(); }
+	            else { return true; }
+	            return false;
+            }
+            </script>
+			
+			<label>로그인 비밀번호</label>
+			<span class="description">비밀번호는 8자리 이상이어야 합니다.</span>
+			<div class="input_wrap"><input type="password" id="pwpw" name="password" value="" onkeyup="checkpw()" min="8" required></div>
+            			
+			<label>로그인 비밀번호 확인</label>
+			<span class="description">비밀번호는 암호화되어 저장됩니다.</span>
+			<div class="input_wrap"><input type="password" id="pwpwpw" name="password_confirmation" value="" onkeyup="checkpwconfirm()" min="8" required></div>
+            			
+			<label>이메일</label>
+			<span class="description">비밀번호 재설정 등에 사용됩니다.</span>
+			<div class="input_wrap"><input type="email" id="email" name="email" value="" required></div>
+			
+			<label>인포21 아이디</label>
+			<div class="input_wrap"><input type="text" id="number" name="info21" value="" required></div>
+			
+			<label>인포21 비밀번호</label>
+			<div></div>
+			<span class="description" style="line-height:1.5">
+				중앙동아리연합회 전산 학생 인증 시스템 <a href="../html/stuauth.html" target="_blank">StuAuth</a>을 사용하여 아이디와 비밀번호는 절대 저장되지 않습니다.
+			</span>
+			<div class="input_wrap"><input type="password" id="password" name="khuis_password" value="" required></div>
+			
+						
+			<div class="btnArea">
+				<div class="description">
+					운영진이 승인한 이후에 정상적으로 로그인하실 수 있습니다.<br>
+					[등록하기] 버튼을 누른 후에 회원 등록이 접수되었다는 페이지가 표시되는지 반드시 확인하세요!</div>
+				<button type="button" class="gray"><a href="../html/khlug.org.html">돌아가기</a></button>
+				<button type="submit" onclick="return checkform()"><span>등록하기</span></button>
+			</div>
+		
+			<label>회원 등록에 따른 개인정보 취급 방침</label>
+			<div class="rule_wrap">
+				<p>
+					쿠러그에서는 회원 관리를 위해 사이트에서 아래와 같은 개인정보를 수집합니다.
+				</p>
+				<ul>
+					<li>직접 입력하는 필수 항목: 로그인 ID, 로그인 비밀번호(암호화되어 저장), 이메일</li>
+					<li>인포21을 통해 입력 받는 항목: 학번, 이름, 소속, 학적, 전화번호 (인포21 접속 아이디와 비밀번호는 절대 수집하지 않습니다.)</li>
+					<li>서비스 이용 과정에서 IP 주소, 쿠키, 방문일시, 서비스 이용 기록과 같은 정보들이 자동으로 생성되어 수집될 수 있습니다.</li>
+					<li>'교류 회원'은 종합정보시스템의 소속 대신 지정된 소속을 사용합니다.</li>
+				</ul>
+				<p>수집된 개인정보는 아래와 같은 목적을 위해 사용됩니다.</p>
+				<ol>
+					<li>로그인 ID와 비밀번호는 사이트 및 제반 시설 이용을 위해 프로그램이 개인을 식별하는데 사용됩니다.</li>
+					<li>이름, 소속은 사이트 및 제반 시설에 남긴 기록의 만든이를 구분하는데 사용됩니다.</li>
+					<li>학번은 사이트와 연동된 다양한 서비스에서 개인을 식별하는데 사용됩니다.</li>
+					<li>이외의 모든 정보는 개인의 역량을 관리하고 이에 따른 맞춤 서비스를 제공하기 위해 사용됩니다.</li>
+				</ol>
+				<p>
+					수집된 개인정보는 회원 관리를 위해 준영구적으로 보존되나, 회원 자격이 상실되면 지체 없이 파기됩니다.<br>
+					단, 사이트 및 제반 시설에 남긴 기록의 만든이 식별을 위해 입학연도, 소속, 이름과 같은 개인정보는 해당 기록의 파기 시까지 남아있을 수 있습니다.
+				</p>
+			</div>
+		</form>
+	</div>
+</div>
+	</div>
+	
+	<div id="footer">
+		<address class="address">
+		17104 경기도 용인시 기흥구 덕영대로 1732, <span>경희대학교 국제캠퍼스 학생회관 405호</span>
+	</address>
+	<address class="sponsor">
+		<a href="../html/khu.ac.kr.html" target="_blank"><img src="../images/khu.png" alt=""> 경희대학교</a>
+		<a href="https://khlug.org/"><img src="../images/favicon.gif" alt=""> 쿠러그</a>
+	</address>
+	<div class="clear"></div>
+	</div>
+	
+	<div id="loader"><div class="lds-dual-ring"><div></div><div></div></div></div>
+</div>
+</body>
+</html>
